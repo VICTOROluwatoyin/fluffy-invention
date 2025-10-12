@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Music - JUjifina</title>
+  <meta name="description" content="Listen to JUJIFINA's Music - Official AfroVybz Movement">
+  <meta name="keywords" content="music, jujifina, afrovybz, songs, tracks, player">
+
+  <!-- Favicons -->
+  <link href="hero-bg1.png.PNG" rel="icon">
+  <link href="hero-bg1.png.PNG" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color:rgb(246, 168, 249);">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename" style="color: rgb(243, 236, 236);">JUJI<span style="color: rgb(248, 247, 243);">FINA</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="music.html" class="active">Music</a></li>
+          <li><a href="gallery.html">Video Gallery</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about" style="background-color: black;">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="container">
+        <h1>Music Library</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Music</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Music Player Section -->
+    <section id="music-player" class="music-player section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>AfroVybz Music Player</h2>
+        <p>Explore our collection of AfroVybz music and collaborations</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row">
+          
+          <!-- Sidebar -->
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="music-sidebar">
+              <div class="sidebar-header">
+                <h4>Music Library</h4>
+                <div class="search-box">
+                  <input type="text" id="searchMusic" placeholder="Search tracks..." class="form-control">
+                  <i class="bi bi-search"></i>
+                </div>
+              </div>
+              
+              <div class="playlist-section">
+                <h5>Featured Tracks</h5>
+                <div class="track-list" id="trackList">
+                  <!-- Tracks will be populated by JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Player -->
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="main-player">
+              
+              <!-- Album Art Display -->
+              <div class="album-art-container">
+                <video id="albumArt" src="music/VID-20251011-WA0027.mp4" alt="AfroVybz Logo" class="album-art" autoplay muted loop>
+                </video>
+                <div class="album-overlay">
+                  <button class="play-btn" id="mainPlayBtn">
+                    <i class="bi bi-play-fill"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Track Info -->
+              <div class="track-info">
+                <h3 id="currentTrackTitle">Select a track to play</h3>
+                <p id="currentArtist">JUJIFINA</p>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="progress-container">
+                <span id="currentTime">0:00</span>
+                <div class="progress-bar-container">
+                  <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                  </div>
+                </div>
+                <span id="totalTime">0:00</span>
+              </div>
+
+              <!-- Player Controls -->
+              <div class="player-controls">
+                <button class="control-btn" id="shuffleBtn">
+                  <i class="bi bi-shuffle"></i>
+                </button>
+                <button class="control-btn" id="prevBtn">
+                  <i class="bi bi-skip-start-fill"></i>
+                </button>
+                <button class="control-btn play-pause-btn" id="playPauseBtn">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+                <button class="control-btn" id="nextBtn">
+                  <i class="bi bi-skip-end-fill"></i>
+                </button>
+                <button class="control-btn" id="repeatBtn">
+                  <i class="bi bi-repeat"></i>
+                </button>
+              </div>
+
+              <!-- Volume Control -->
+              <div class="volume-control">
+                <i class="bi bi-volume-down"></i>
+                <div class="volume-slider">
+                  <input type="range" id="volumeSlider" min="0" max="100" value="70">
+                </div>
+                <i class="bi bi-volume-up"></i>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Music Player Section -->
+
+  </main>
+
+  <!-- Now Playing Bar (Fixed at bottom) -->
+  <div class="now-playing-bar" id="nowPlayingBar">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="now-playing-info">
+            <video id="npAlbumArt" src="music/VID-20251011-WA0027.mp4" alt="AfroVybz Logo" class="np-album-art" autoplay muted loop>
+            </video>
+            <div class="np-track-info">
+              <h6 id="npTrackTitle">No track playing</h6>
+              <p id="npArtist">JUJIFINA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="np-controls">
+            <button class="np-btn" id="npPrevBtn">
+              <i class="bi bi-skip-start-fill"></i>
+            </button>
+            <button class="np-btn np-play-btn" id="npPlayPauseBtn">
+              <i class="bi bi-play-fill"></i>
+            </button>
+            <button class="np-btn" id="npNextBtn">
+              <i class="bi bi-skip-end-fill"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="np-progress">
+            <span id="npCurrentTime">0:00</span>
+            <div class="np-progress-bar">
+              <div class="np-progress-fill" id="npProgressFill"></div>
+            </div>
+            <span id="npTotalTime">0:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">JUJIFINA</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>United States of America </p>
+            <p><strong>Email:</strong> <span>JujifinaMusic@gmail.com</span></p>
+            <p><strong>Email:</strong> <span>JujifinaVR@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="artists.html">Artists</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="music.html">Music</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="gallery.html">Video Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Artists</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="artists.html#mark6ix">Mark6ix Okpani</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="artists.html#dilo">Dilo Swags</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="artists.html#telemetro">Telemetro</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="artists.html#raheem">Rocksteady Raheem</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="https://x.com/jujifina?s=21"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/jujifinaLQD?mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/Jujifina"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.threads.net/jujifina"><i class="bi bi-broadcast"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">JUJIFINA</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://.com/">Victor</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Music Player JS -->
+  <script>
+    // Music data
+    const musicData = [
+      {
+        id: 1,
+        title: "AfroVybz",
+        artist: "Dilo & Jujifina",
+        file: "music/Dilo & Jujifina - AfroVybz  (LQDpromotions) .mp3",
+        duration: "3:45",
+        album: "Official AfroVybz Anthem"
+      },
+      {
+        id: 2,
+        title: "Manya Me",
+        artist: "Jujifina feat. Boy Feddy",
+        file: "music/Manya Me (feat. Boy Feddy) (320).mp3",
+        duration: "4:12",
+        album: "Collaborations"
+      },
+      {
+        id: 3,
+        title: "METETE",
+        artist: "Mark6ix",
+        file: "music/Mark6ix -METETE (LQDENTOAV).mp3",
+        duration: "3:28",
+        album: "LQD ENT OAV"
+      },
+      {
+        id: 4,
+        title: "Day and Night (Pain Killer)",
+        artist: "Rocksteady",
+        file: "music/ROCKSTEADY- day and night (pain killer) OAV.mp3",
+        duration: "4:30",
+        album: "Official AfroVybz"
+      },
+      {
+        id: 5,
+        title: "GunShot fi dem",
+        artist: "Jujifina",
+        file: "music/GunShot_fi_dem_By_Jujifina (original).mp3",
+        duration: "3:15",
+        album: "Original Tracks"
+      },
+      {
+        id: 6,
+        title: "Rock di Boat",
+        artist: "Jujifina & Mark",
+        file: "music/JUJIFINA  mark  rock di boat (almost final).mp3",
+        duration: "3:50",
+        album: "Collaborations"
+      },
+      {
+        id: 7,
+        title: "No Puedes Conmigo",
+        artist: "Jujifina",
+        file: "music/jujifina-no-puedes-conmigo.mp3",
+        duration: "3:20",
+        album: "Original Tracks"
+      }
+    ];
+
+    // Audio player
+    let audioPlayer = new Audio();
+    let currentTrackIndex = 0;
+    let isPlaying = false;
+    let isShuffled = false;
+    let isRepeating = false;
+
+    // DOM elements
+    const trackList = document.getElementById('trackList');
+    const currentTrackTitle = document.getElementById('currentTrackTitle');
+    const currentArtist = document.getElementById('currentArtist');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const mainPlayBtn = document.getElementById('mainPlayBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const shuffleBtn = document.getElementById('shuffleBtn');
+    const repeatBtn = document.getElementById('repeatBtn');
+    const volumeSlider = document.getElementById('volumeSlider');
+    const progressBar = document.getElementById('progressBar');
+    const progressFill = document.getElementById('progressFill');
+    const currentTime = document.getElementById('currentTime');
+    const totalTime = document.getElementById('totalTime');
+
+    // Now Playing Bar elements
+    const nowPlayingBar = document.getElementById('nowPlayingBar');
+    const npTrackTitle = document.getElementById('npTrackTitle');
+    const npArtist = document.getElementById('npArtist');
+    const npPlayPauseBtn = document.getElementById('npPlayPauseBtn');
+    const npPrevBtn = document.getElementById('npPrevBtn');
+    const npNextBtn = document.getElementById('npNextBtn');
+    const npProgressFill = document.getElementById('npProgressFill');
+    const npCurrentTime = document.getElementById('npCurrentTime');
+    const npTotalTime = document.getElementById('npTotalTime');
+    const npAlbumArt = document.getElementById('npAlbumArt');
+
+    // Initialize player
+    function initPlayer() {
+      renderTrackList();
+      updatePlayerState();
+      setupEventListeners();
+      loadPlayerState();
+    }
+
+    // Render track list
+    function renderTrackList() {
+      trackList.innerHTML = '';
+      musicData.forEach((track, index) => {
+        const trackItem = document.createElement('div');
+        trackItem.className = 'track-item';
+        trackItem.innerHTML = `
+          <div class="track-info-small">
+            <h6>${track.title}</h6>
+            <p>${track.artist}</p>
+          </div>
+          <div class="track-controls">
+            <span class="track-duration">${track.duration}</span>
+            <button class="play-track-btn" data-index="${index}">
+              <i class="bi bi-play-fill"></i>
+            </button>
+          </div>
+        `;
+        trackList.appendChild(trackItem);
+      });
+    }
+
+    // Setup event listeners
+    function setupEventListeners() {
+      // Play/Pause buttons
+      playPauseBtn.addEventListener('click', togglePlayPause);
+      mainPlayBtn.addEventListener('click', togglePlayPause);
+      npPlayPauseBtn.addEventListener('click', togglePlayPause);
+
+      // Navigation buttons
+      prevBtn.addEventListener('click', playPrevious);
+      nextBtn.addEventListener('click', playNext);
+      npPrevBtn.addEventListener('click', playPrevious);
+      npNextBtn.addEventListener('click', playNext);
+
+      // Control buttons
+      shuffleBtn.addEventListener('click', toggleShuffle);
+      repeatBtn.addEventListener('click', toggleRepeat);
+
+      // Volume control
+      volumeSlider.addEventListener('input', updateVolume);
+
+      // Progress bar
+      progressBar.addEventListener('click', seekTo);
+
+      // Track list
+      trackList.addEventListener('click', (e) => {
+        if (e.target.closest('.play-track-btn')) {
+          const index = parseInt(e.target.closest('.play-track-btn').dataset.index);
+          playTrack(index);
+        }
+      });
+
+      // Audio events
+      audioPlayer.addEventListener('loadedmetadata', updateDuration);
+      audioPlayer.addEventListener('timeupdate', updateProgress);
+      audioPlayer.addEventListener('ended', handleTrackEnd);
+    }
+
+    // Play track
+    function playTrack(index) {
+      currentTrackIndex = index;
+      const track = musicData[currentTrackIndex];
+      
+      audioPlayer.src = track.file;
+      audioPlayer.load();
+      
+      updatePlayerState();
+      updateNowPlayingBar();
+      
+      // Save state
+      savePlayerState();
+      
+      // Auto play
+      audioPlayer.play().then(() => {
+        isPlaying = true;
+        updatePlayPauseButtons();
+        showNowPlayingBar();
+      }).catch(error => {
+        console.log('Auto-play was prevented:', error);
+      });
+    }
+
+    // Toggle play/pause
+    function togglePlayPause() {
+      if (audioPlayer.src) {
+        if (isPlaying) {
+          audioPlayer.pause();
+          isPlaying = false;
+        } else {
+          audioPlayer.play();
+          isPlaying = true;
+        }
+        updatePlayPauseButtons();
+        savePlayerState();
+      }
+    }
+
+    // Play previous track
+    function playPrevious() {
+      if (isShuffled) {
+        currentTrackIndex = Math.floor(Math.random() * musicData.length);
+      } else {
+        currentTrackIndex = (currentTrackIndex - 1 + musicData.length) % musicData.length;
+      }
+      playTrack(currentTrackIndex);
+    }
+
+    // Play next track
+    function playNext() {
+      if (isShuffled) {
+        currentTrackIndex = Math.floor(Math.random() * musicData.length);
+      } else {
+        currentTrackIndex = (currentTrackIndex + 1) % musicData.length;
+      }
+      playTrack(currentTrackIndex);
+    }
+
+    // Toggle shuffle
+    function toggleShuffle() {
+      isShuffled = !isShuffled;
+      shuffleBtn.classList.toggle('active', isShuffled);
+      savePlayerState();
+    }
+
+    // Toggle repeat
+    function toggleRepeat() {
+      isRepeating = !isRepeating;
+      repeatBtn.classList.toggle('active', isRepeating);
+      savePlayerState();
+    }
+
+    // Update volume
+    function updateVolume() {
+      const volume = volumeSlider.value / 100;
+      audioPlayer.volume = volume;
+      savePlayerState();
+    }
+
+    // Seek to position
+    function seekTo(e) {
+      if (audioPlayer.duration) {
+        const rect = progressBar.getBoundingClientRect();
+        const pos = (e.clientX - rect.left) / rect.width;
+        audioPlayer.currentTime = pos * audioPlayer.duration;
+      }
+    }
+
+    // Update progress
+    function updateProgress() {
+      if (audioPlayer.duration) {
+        const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+        progressFill.style.width = progress + '%';
+        npProgressFill.style.width = progress + '%';
+        
+        currentTime.textContent = formatTime(audioPlayer.currentTime);
+        npCurrentTime.textContent = formatTime(audioPlayer.currentTime);
+      }
+    }
+
+    // Update duration
+    function updateDuration() {
+      totalTime.textContent = formatTime(audioPlayer.duration);
+      npTotalTime.textContent = formatTime(audioPlayer.duration);
+    }
+
+    // Handle track end
+    function handleTrackEnd() {
+      if (isRepeating) {
+        audioPlayer.currentTime = 0;
+        audioPlayer.play();
+      } else {
+        playNext();
+      }
+    }
+
+    // Update player state
+    function updatePlayerState() {
+      const track = musicData[currentTrackIndex];
+      currentTrackTitle.textContent = track.title;
+      currentArtist.textContent = track.artist;
+      
+      // Update track list active state
+      document.querySelectorAll('.track-item').forEach((item, index) => {
+        item.classList.toggle('active', index === currentTrackIndex);
+      });
+    }
+
+    // Update now playing bar
+    function updateNowPlayingBar() {
+      const track = musicData[currentTrackIndex];
+      npTrackTitle.textContent = track.title;
+      npArtist.textContent = track.artist;
+    }
+
+    // Update play/pause buttons
+    function updatePlayPauseButtons() {
+      const playIcon = isPlaying ? 'bi-pause-fill' : 'bi-play-fill';
+      playPauseBtn.innerHTML = `<i class="bi ${playIcon}"></i>`;
+      mainPlayBtn.innerHTML = `<i class="bi ${playIcon}"></i>`;
+      npPlayPauseBtn.innerHTML = `<i class="bi ${playIcon}"></i>`;
+    }
+
+    // Show now playing bar
+    function showNowPlayingBar() {
+      nowPlayingBar.classList.add('visible');
+    }
+
+    // Format time
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return '0:00';
+      const mins = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60);
+      return `${mins}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    // Save player state
+    function savePlayerState() {
+      const state = {
+        currentTrackIndex,
+        isPlaying,
+        volume: audioPlayer.volume,
+        currentTime: audioPlayer.currentTime,
+        isShuffled,
+        isRepeating
+      };
+      localStorage.setItem('jujifinaMusicPlayer', JSON.stringify(state));
+    }
+
+    // Load player state
+    function loadPlayerState() {
+      const saved = localStorage.getItem('jujifinaMusicPlayer');
+      if (saved) {
+        const state = JSON.parse(saved);
+        volumeSlider.value = state.volume * 100;
+        audioPlayer.volume = state.volume;
+        
+        if (state.currentTrackIndex !== undefined) {
+          currentTrackIndex = state.currentTrackIndex;
+          updatePlayerState();
+          updateNowPlayingBar();
+        }
+      }
+    }
+
+    // Initialize when page loads
+    document.addEventListener('DOMContentLoaded', initPlayer);
+  </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>JUjifina</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="hero-bg1.png.PNG" rel="icon">
+  <link href="hero-bg1.png.PNG" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color:rgb(246, 168, 249);">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename" style="color: rgb(243, 236, 236);">JUJI<span style="color: rgb(248, 247, 243);">FINA</span></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="gallery.html">Video Gallery</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Pricing</a></li>
+         
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about" style="background-color: black;">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background" style="background-color: black;">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>JUJIFINA</h1>
+            <p> Jujifina is a dynamic vocal producer, recording artist, and the executive behind LQD ENT</p>
+            <div class="d-flex">
+              <a href="https://open.spotify.com/artist/48fnxlQYnEkNPFWIyaI9Iu?si=qP-ZiDG_TYumbr7B-iRBCw" class="btn-get-started" style="background-color: rgb(246, 168, 249);">Get Started</a>
+              <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+              <a href="https://open.spotify.com/track/72kTpPexSQezMFKvRvLDZ8?si=gISvHjCHR3muI1p-Vph_PQ&context=spotify%3Aartist%3A3qtFk1fmpQAVb7YIQJIyuN" class="btn-spotify d-flex align-items-center" style="background-color: #1DB954; color: white; margin-left: 10px;"><i class="bi bi-spotify"></i><span>Spotify</span></a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/hero-img.jpg" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="client/client-1.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="client/client-3.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="client/client-4.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="client/client-5.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="client/client-6.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="client/client-7.jpg" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Jujifina is a dynamic vocal producer, recording artist, and the executive behind LQD ENT. She is also the innovative founder of Official Afro Vybz (OAV), a cultural movement that transcends traditional entertainment by fostering inclusion, education, and love through music and dance.
+
+              As a polyglot and culture enthusiast, Jujifina connects with diverse audiences around the globe. Her collaborations with artists such as Flama de la Section, Eddy Ranks, Temptation (Tentacion), Mark6ix, and Rocksteady reflect her versatility and commitment to artistic excellence.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Executive of LQD ENT</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Collaborations with top international artists</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Manager of rising stars like Dilo Swagz, Mark6ix Okpani, Cigity, Winna Boy, and Rocksteady</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>            
+              <span>   Mission and Vision:</span>
+              Jujifina's mission is to bridge cultural gaps and bring people together through the universal language of music. Her vision is to create a global community where music and culture inspire and unite people from all walks of life.             </p>
+            <a href="https://linktr.ee/jujifina" class="read-more"><span>Know Her More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us light-background" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Few things to know about </span><strong>Jujifina</strong></h3>
+              <p>
+                we answer few questions you may want to ask 
+              </p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+
+                <h3><span>01</span> Who is Jujifina?</h3>
+                <div class="faq-content">
+                  <p>
+                    Jujifina is a vocal producer, recording artist, executive of LQD ENT, and the founder of Official Afro Vybz (OAV). She is known for her diverse skill set, including music production, artist management, and brand development.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>02</span>                   2. What is Official Afro Vybz (OAV)                  ?</h3>
+                <div class="faq-content">
+                  <p>
+                    Official Afro Vybz (OAV) is a cultural movement founded by Jujifina. It aims to showcase music, culture, and dance while promoting inclusion, education, and love through the diaspora connection.
+
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>03</span> 
+                  
+           What makes Jujifina’s approach unique?</h3>
+                <div class="faq-content">
+                  <p>
+                    Jujifina’s approach is unique due to her multilingual abilities, cultural enthusiasm, and extensive experience in the music industry. Her passion for connecting with diverse audiences and her commitment to artistic excellence set her apart.  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <video src="vid/spinning.mp4" class="img-fluid" alt="AfroVybz Spinning Logo" autoplay muted loop data-aos="zoom-in" data-aos-delay="100">
+            </video>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="assets/img/skills.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+            <h3>JUJIFINA's SKILLS</h3>
+            <p class="fst-italic">
+            </p>
+
+            <div class="skills-content skills-animation">
+
+              <div class="progress">
+                <span class="skill"><span>Vocal Production</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Music Production</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Songwriting
+                </span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Artist management</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="color: red;"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a href="" class="stretched-link">Vocal Production
+              </a></h4>
+              <p>Jujifina excels in vocal production, ensuring that every artist's voice shines through. Her expertise includes:
+
+                Pitch Correction
+                Harmonization
+                Vocal Arrangement
+                Recording Techniques
+                Post-Production Editing</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a href="" class="stretched-link">Music Production</a></h4>
+              <p>With a deep understanding of music theory and modern production tools, Jujifina creates high-quality tracks that captivate listeners. Her skills include:
+
+                Beat Making
+                Sound Design
+                Mixing and Mastering
+                Arrangement and Composition
+                Genre Versatility (Afrobeats, Hip-Hop, R&B, etc.)</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a href="" class="stretched-link">Songwriting
+              </a></h4>
+              <p>Jujifina is a talented songwriter, crafting lyrics and melodies that resonate. Her songwriting capabilities encompass:
+
+                Lyric Writing
+                Melody Creation
+                Song Structure
+                Co-Writing and Collaboration
+                Emotional Storytelling</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Brand Development
+              </a></h4>
+              <p>Helping artists build and expand their brands is one of Jujifina’s specialties. Her brand development expertise covers:
+
+                Personal Branding
+                Visual Identity
+                Online Presence
+                Marketing Campaigns
+                Public Relations</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- VR Achievement Section -->
+    <section id="vr-achievement" class="vr-achievement section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>VR Pioneer & Innovation Leader</h2>
+        <p>Exploring new frontiers in virtual reality and digital creativity</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <img src="vid/more1.jpg" class="img-fluid vr-image" alt="Jujifina in Horizon Worlds">
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="vr-content">
+              <h3>Featured in BBB Magazine</h3>
+              <p>Jujifina, a prominent figure in the virtual realm of Horizon Worlds, has recently been featured in BBB Magazine, highlighting her significant contributions and pioneering spirit in the ever-evolving VR landscape. Known for her innovative approaches and community-focused initiatives, Jujifina has become a beacon of creativity and inspiration within the platform, encouraging others to explore and express themselves in new ways.</p>
+              
+              <p>BBB Magazine, renowned for its focus on the latest trends and influencers in technology and entertainment, provides an insightful overview of Jujifina's work, emphasizing her role in shaping the future of virtual interactions. This feature not only showcases her achievements but also serves to inspire a new generation of VR enthusiasts to venture into the limitless possibilities of this digital universe.</p>
+
+              <div class="vr-highlights">
+                <h5>Key Achievements:</h5>
+                <ul>
+                  <li><i class="bi bi-check2-circle"></i> Featured in BBB Magazine</li>
+                  <li><i class="bi bi-check2-circle"></i> Pioneer in Horizon Worlds VR</li>
+                  <li><i class="bi bi-check2-circle"></i> Community-focused initiatives</li>
+                  <li><i class="bi bi-check2-circle"></i> Shaping future of virtual interactions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center mt-5">
+          <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+            <img src="vid/more2.jpg" class="img-fluid vr-image" alt="Jujifina VR Innovation">
+          </div>
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="200">
+            <div class="vr-content">
+              <h3>Innovation in Virtual Reality</h3>
+              <p>Jujifina's work in Horizon Worlds represents a perfect fusion of her creative talents and technological innovation. Her ability to translate her musical and cultural expertise into the virtual realm has created new opportunities for artistic expression and community building.</p>
+              
+              <p>Through her pioneering efforts, Jujifina continues to break barriers and explore the limitless possibilities of virtual reality, inspiring others to embrace technology as a tool for creativity and connection.</p>
+
+              <div class="vr-stats">
+                <div class="row text-center">
+                  <div class="col-4">
+                    <div class="stat-item">
+                      <h4>VR Pioneer</h4>
+                      <p>Leading Innovation</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="stat-item">
+                      <h4>Community</h4>
+                      <p>Building Connections</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="stat-item">
+                      <h4>Inspiration</h4>
+                      <p>New Generation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /VR Achievement Section -->
+
+    <!-- Embedded Music Player Section -->
+    <section id="embedded-music" class="embedded-music section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>AfroVybz Music Player</h2>
+        <p>Experience the AfroVybz sound - play our featured tracks</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="embedded-player" data-aos="fade-up" data-aos-delay="200">
+              
+              <!-- Featured Track Display -->
+              <div class="featured-track">
+                <div class="track-artwork">
+                  <video id="embeddedAlbumArt" src="music/VID-20251011-WA0027.mp4" alt="AfroVybz Logo" class="embedded-album-art" autoplay muted loop>
+                  </video>
+                  <div class="artwork-overlay">
+                    <button class="embedded-play-btn" id="embeddedPlayBtn">
+                      <i class="bi bi-play-fill"></i>
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="track-details">
+                  <h4 id="embeddedTrackTitle">AfroVybz</h4>
+                  <p id="embeddedArtist">Dilo & Jujifina</p>
+                  <div class="track-meta">
+                    <span class="track-album">Official AfroVybz Anthem</span>
+                    <span class="track-duration">3:45</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Embedded Controls -->
+              <div class="embedded-controls">
+                <div class="control-row">
+                  <button class="embedded-control-btn" id="embeddedPrevBtn">
+                    <i class="bi bi-skip-start-fill"></i>
+                  </button>
+                  <button class="embedded-play-pause-btn" id="embeddedPlayPauseBtn">
+                    <i class="bi bi-play-fill"></i>
+                  </button>
+                  <button class="embedded-control-btn" id="embeddedNextBtn">
+                    <i class="bi bi-skip-end-fill"></i>
+                  </button>
+                </div>
+                
+                <div class="embedded-progress">
+                  <span id="embeddedCurrentTime">0:00</span>
+                  <div class="embedded-progress-bar">
+                    <div class="embedded-progress-fill" id="embeddedProgressFill"></div>
+                  </div>
+                  <span id="embeddedTotalTime">3:45</span>
+                </div>
+              </div>
+
+              <!-- Quick Access -->
+              <div class="quick-access">
+                <div class="featured-tracks">
+                  <h5>Featured Tracks</h5>
+                  <div class="track-preview-list">
+                    <div class="preview-item active" data-track="0">
+                      <span class="preview-title">AfroVybz</span>
+                      <span class="preview-artist">Dilo & Jujifina</span>
+                    </div>
+                    <div class="preview-item" data-track="1">
+                      <span class="preview-title">Manya Me</span>
+                      <span class="preview-artist">Jujifina feat. Boy Feddy</span>
+                    </div>
+                    <div class="preview-item" data-track="2">
+                      <span class="preview-title">METETE</span>
+                      <span class="preview-artist">Mark6ix</span>
+                    </div>
+                    <div class="preview-item" data-track="3">
+                      <span class="preview-title">Day and Night</span>
+                      <span class="preview-artist">Rocksteady</span>
+                    </div>
+                    <div class="preview-item" data-track="4">
+                      <span class="preview-title">GunShot fi dem</span>
+                      <span class="preview-artist">Jujifina</span>
+                    </div>
+                    <div class="preview-item" data-track="5">
+                      <span class="preview-title">Rock di Boat</span>
+                      <span class="preview-artist">Jujifina & Mark</span>
+                    </div>
+                    <div class="preview-item" data-track="6">
+                      <span class="preview-title">No Puedes Conmigo</span>
+                      <span class="preview-artist">Jujifina</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="access-actions">
+                  <a href="music.html" class="btn-view-all">
+                    <i class="bi bi-music-note-list"></i>
+                    View All Music
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Embedded Music Player Section -->
+
+    <!-- Call To Action Section 
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Call To Action</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>/Call To Action Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">song projects</li>
+          
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Afrovybz or nothing</h4>
+                <p><a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" >Click here to play</a></p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Afrovybz or nothing" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/1006365892.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Two Four Seven</h4>
+                <p><a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" >Click here to play</a></p>
+                <a href="assets/img/masonry-portfolio/1006365892.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4> Afrovybz crossing the continent </h4>
+                <p><a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" >Click here to play</a></p>
+
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4> Dilo Says </h4>
+                <p><a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" >Click here to play</a></p>
+
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Two Four Seven</h4>
+                <p><a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" >Click here to play</a></p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://open.spotify.com/album/0NcsWctgDBRhFWTDuwjEVG?si=fEM6MgyjQ124zuc5r_WZ_g" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+           <!-- End Portfolio Item -->
+
+           <!-- End Portfolio Item -->
+
+           <!-- End Portfolio Item -->
+           --> <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Afrovybz or nothing </h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+           <!-- End Portfolio Item -->
+
+           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Afrovybz or nothing </h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div> -->
+          </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Team Section 
+    <section id="team" class="team section">
+
+       Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <!-- <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- End Team Member -->
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- End Team Member -->
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
+
+      <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div> -->
+      <!-- End Section Title -->
+
+     
+          <!-- </div> -->
+          <!-- End Pricing Item -->
+
+          <!-- <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+          </div> -->
+          <!-- End Pricing Item 
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+          </div><!-- End Pricing Item --
+
+        </div>
+
+      </div>
+
+    </section> Pricing Section -->
+
+    <!-- Testimonials Section 
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title 
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title --
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item --
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item --
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Faq 2 Section --
+    <section id="faq-2" class="faq-2 section light-background">
+
+      <!-- Section Title --
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title --
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item--
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item--
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item--
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item--
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq 2 Section -->
+
+    <!-- Contact Section --
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p> United States of America </p>
+                </div>
+              </div><!-- End Info Item -->
+
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>JujifinaMusic@gmail.com</p>
+                  <p>JujifinaVR@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">JUJIFINA</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>United States of America </p>
+            <p><strong>Email:</strong> <span>JujifinaMusic@gmail.com</span></p>
+            <p><strong>Email:</strong> <span>JujifinaVR@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="https://x.com/jujifina?s=21"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/jujifinaLQD?mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/Jujifina"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.threads.net/jujifina"><i class="bi bi-broadcast"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">JUJIFINA</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://.com/">Victor</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Embedded Music Player JS -->
+  <script>
+    // Shared music data (same as music.html)
+    const embeddedMusicData = [
+      {
+        id: 1,
+        title: "AfroVybz",
+        artist: "Dilo & Jujifina",
+        file: "music/Dilo & Jujifina - AfroVybz  (LQDpromotions) .mp3",
+        duration: "3:45",
+        album: "Official AfroVybz Anthem"
+      },
+      {
+        id: 2,
+        title: "Manya Me",
+        artist: "Jujifina feat. Boy Feddy",
+        file: "music/Manya Me (feat. Boy Feddy) (320).mp3",
+        duration: "4:12",
+        album: "Collaborations"
+      },
+      {
+        id: 3,
+        title: "METETE",
+        artist: "Mark6ix",
+        file: "music/Mark6ix -METETE (LQDENTOAV).mp3",
+        duration: "3:28",
+        album: "LQD ENT OAV"
+      },
+      {
+        id: 4,
+        title: "Day and Night (Pain Killer)",
+        artist: "Rocksteady",
+        file: "music/ROCKSTEADY- day and night (pain killer) OAV.mp3",
+        duration: "4:30",
+        album: "Official AfroVybz"
+      },
+      {
+        id: 5,
+        title: "GunShot fi dem",
+        artist: "Jujifina",
+        file: "music/GunShot_fi_dem_By_Jujifina (original).mp3",
+        duration: "3:15",
+        album: "Original Tracks"
+      },
+      {
+        id: 6,
+        title: "Rock di Boat",
+        artist: "Jujifina & Mark",
+        file: "music/JUJIFINA  mark  rock di boat (almost final).mp3",
+        duration: "3:50",
+        album: "Collaborations"
+      },
+      {
+        id: 7,
+        title: "No Puedes Conmigo",
+        artist: "Jujifina",
+        file: "music/jujifina-no-puedes-conmigo.mp3",
+        duration: "3:20",
+        album: "Original Tracks"
+      }
+    ];
+
+    // Embedded player elements
+    let embeddedAudioPlayer = new Audio();
+    let embeddedCurrentTrackIndex = 0;
+    let embeddedIsPlaying = false;
+
+    // DOM elements
+    const embeddedTrackTitle = document.getElementById('embeddedTrackTitle');
+    const embeddedArtist = document.getElementById('embeddedArtist');
+    const embeddedPlayPauseBtn = document.getElementById('embeddedPlayPauseBtn');
+    const embeddedPlayBtn = document.getElementById('embeddedPlayBtn');
+    const embeddedPrevBtn = document.getElementById('embeddedPrevBtn');
+    const embeddedNextBtn = document.getElementById('embeddedNextBtn');
+    const embeddedProgressFill = document.getElementById('embeddedProgressFill');
+    const embeddedCurrentTime = document.getElementById('embeddedCurrentTime');
+    const embeddedTotalTime = document.getElementById('embeddedTotalTime');
+
+    // Initialize embedded player
+    function initEmbeddedPlayer() {
+      updateEmbeddedPlayerState();
+      setupEmbeddedEventListeners();
+      loadEmbeddedPlayerState();
+    }
+
+    // Setup event listeners
+    function setupEmbeddedEventListeners() {
+      // Play/Pause buttons
+      embeddedPlayPauseBtn.addEventListener('click', embeddedTogglePlayPause);
+      embeddedPlayBtn.addEventListener('click', embeddedTogglePlayPause);
+
+      // Navigation buttons
+      embeddedPrevBtn.addEventListener('click', embeddedPlayPrevious);
+      embeddedNextBtn.addEventListener('click', embeddedPlayNext);
+
+      // Track preview list
+      document.querySelectorAll('.preview-item').forEach((item, index) => {
+        item.addEventListener('click', () => {
+          embeddedPlayTrack(index);
+        });
+      });
+
+      // Audio events
+      embeddedAudioPlayer.addEventListener('loadedmetadata', embeddedUpdateDuration);
+      embeddedAudioPlayer.addEventListener('timeupdate', embeddedUpdateProgress);
+      embeddedAudioPlayer.addEventListener('ended', embeddedHandleTrackEnd);
+    }
+
+    // Play track
+    function embeddedPlayTrack(index) {
+      embeddedCurrentTrackIndex = index;
+      const track = embeddedMusicData[embeddedCurrentTrackIndex];
+      
+      embeddedAudioPlayer.src = track.file;
+      embeddedAudioPlayer.load();
+      
+      updateEmbeddedPlayerState();
+      
+      // Save state
+      saveEmbeddedPlayerState();
+      
+      // Update preview items
+      document.querySelectorAll('.preview-item').forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+      });
+      
+      // Auto play
+      embeddedAudioPlayer.play().then(() => {
+        embeddedIsPlaying = true;
+        updateEmbeddedPlayPauseButtons();
+      }).catch(error => {
+        console.log('Auto-play was prevented:', error);
+      });
+    }
+
+    // Toggle play/pause
+    function embeddedTogglePlayPause() {
+      if (embeddedAudioPlayer.src) {
+        if (embeddedIsPlaying) {
+          embeddedAudioPlayer.pause();
+          embeddedIsPlaying = false;
+        } else {
+          embeddedAudioPlayer.play();
+          embeddedIsPlaying = true;
+        }
+        updateEmbeddedPlayPauseButtons();
+        saveEmbeddedPlayerState();
+      }
+    }
+
+    // Play previous track
+    function embeddedPlayPrevious() {
+      embeddedCurrentTrackIndex = (embeddedCurrentTrackIndex - 1 + embeddedMusicData.length) % embeddedMusicData.length;
+      embeddedPlayTrack(embeddedCurrentTrackIndex);
+    }
+
+    // Play next track
+    function embeddedPlayNext() {
+      embeddedCurrentTrackIndex = (embeddedCurrentTrackIndex + 1) % embeddedMusicData.length;
+      embeddedPlayTrack(embeddedCurrentTrackIndex);
+    }
+
+    // Update progress
+    function embeddedUpdateProgress() {
+      if (embeddedAudioPlayer.duration) {
+        const progress = (embeddedAudioPlayer.currentTime / embeddedAudioPlayer.duration) * 100;
+        embeddedProgressFill.style.width = progress + '%';
+        embeddedCurrentTime.textContent = formatTime(embeddedAudioPlayer.currentTime);
+      }
+    }
+
+    // Update duration
+    function embeddedUpdateDuration() {
+      embeddedTotalTime.textContent = formatTime(embeddedAudioPlayer.duration);
+    }
+
+    // Handle track end
+    function embeddedHandleTrackEnd() {
+      embeddedPlayNext();
+    }
+
+    // Update player state
+    function updateEmbeddedPlayerState() {
+      const track = embeddedMusicData[embeddedCurrentTrackIndex];
+      embeddedTrackTitle.textContent = track.title;
+      embeddedArtist.textContent = track.artist;
+    }
+
+    // Update play/pause buttons
+    function updateEmbeddedPlayPauseButtons() {
+      const playIcon = embeddedIsPlaying ? 'bi-pause-fill' : 'bi-play-fill';
+      embeddedPlayPauseBtn.innerHTML = `<i class="bi ${playIcon}"></i>`;
+      embeddedPlayBtn.innerHTML = `<i class="bi ${playIcon}"></i>`;
+    }
+
+    // Format time
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return '0:00';
+      const mins = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60);
+      return `${mins}:${secs.toString().padStart(2, '0')}`;
+    }
+
+    // Save player state
+    function saveEmbeddedPlayerState() {
+      const state = {
+        embeddedCurrentTrackIndex,
+        embeddedIsPlaying,
+        volume: embeddedAudioPlayer.volume,
+        currentTime: embeddedAudioPlayer.currentTime
+      };
+      localStorage.setItem('jujifinaEmbeddedPlayer', JSON.stringify(state));
+    }
+
+    // Load player state
+    function loadEmbeddedPlayerState() {
+      const saved = localStorage.getItem('jujifinaEmbeddedPlayer');
+      if (saved) {
+        const state = JSON.parse(saved);
+        embeddedAudioPlayer.volume = state.volume || 0.7;
+        
+        if (state.embeddedCurrentTrackIndex !== undefined) {
+          embeddedCurrentTrackIndex = state.embeddedCurrentTrackIndex;
+          updateEmbeddedPlayerState();
+          
+          // Update preview items
+          document.querySelectorAll('.preview-item').forEach((item, i) => {
+            item.classList.toggle('active', i === embeddedCurrentTrackIndex);
+          });
+        }
+      }
+    }
+
+    // Initialize when page loads
+    document.addEventListener('DOMContentLoaded', initEmbeddedPlayer);
+  </script>
+
+</body>
+
+</html>
